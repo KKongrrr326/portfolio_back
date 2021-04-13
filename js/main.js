@@ -1,4 +1,9 @@
 /* main.js */
+$(function() {
+
+    if($(window).width() < 1024){ $('#fullpage').removeAttr('id'); }
+
+});
 
 $(document).ready(function() {
     $('#fullpage').fullpage({
@@ -11,16 +16,11 @@ $(document).ready(function() {
         navigationTooltips : ['Home','jisign','mintech','admin','design','contact'],
         navigationPosition: 'right',
         showActiveTooltips : true,
-        scrollingSpeed : 500,
-        afterResponsive : function(isResponsive){
-            if($(window).width() < 1024){ $('#fullpage').removeAttr('id'); }
-        }
+        scrollingSpeed : 500
+        // afterResponsive : function(isResponsive){
+        //     if($(window).width() < 1024){ $('#fullpage').removeAttr('id'); }
+        // }
 
     });
 });
 
-// $(function() {
-
-//     if($(window).width() < 1024){ $('#fullpage').removeAttr('id'); }
-
-// });
