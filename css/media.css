@@ -72,7 +72,10 @@
     }
 }
 @media (max-width: @iphone-screen) {
-        background-attachment: scroll;
+        html, body {
+        background-size: auto 100%;
+        background-attachment: fixed;
+    }
     }
 @media only screen and (max-width:1199px) {
     html, body {
