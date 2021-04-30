@@ -1,26 +1,27 @@
 /* main.js */
-$(function() {
 
-    if($(window).width() < 1024){ $('#fullpage').removeAttr('id'); }
-
-});
-
-$(document).ready(function() {
+$(document).ready(function () {
+    if ($(window).width() < 1024) {
+        scrolloverflowed = false;
+    }
+    else { 
+        scrolloverflowed = true;
+     }
     $('#fullpage').fullpage({
         //options here
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-        autoScrolling:true,
+        autoScrolling: true,
         scrollHorizontally: true,
-        keyboardScrolling : true, 
+        keyboardScrolling: true,
         navigation: true,
-        navigationTooltips : ['Home','jisign','mintech','admin','design','contact'],
+        navigationTooltips: ['Home', 'jisign', 'mintech', 'admin', 'design', 'contact'],
         navigationPosition: 'right',
-        showActiveTooltips : true,
-        scrollingSpeed : 500
-        // afterResponsive : function(isResponsive){
-        //     if($(window).width() < 1024){ $('#fullpage').removeAttr('id'); }
-        // }
+        showActiveTooltips: true,
+        scrollingSpeed: 500,
+        responsiveWidth: 1200
 
     });
+
+
 });
 

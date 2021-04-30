@@ -13,8 +13,8 @@ header .logo {
     right: 80px;
     transform: translateY(-50%);
     background-image: linear-gradient(to right, #00ffa9, #0d4dff);
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
 }
 
@@ -23,7 +23,7 @@ header .logo p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 22px;
+    font-size: 26px;
     font-family: 'Binggrae-Bold';
     font-weight: 600;
     color: #fff;
@@ -34,7 +34,7 @@ header svg {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 92px;
+    width: 100px;
     height: auto;
 }
 
@@ -43,9 +43,9 @@ header svg:not(:root) {
 }
 
 header svg textPath {
-    font-size: 27px !important;
-    letter-spacing: 5px;
-    word-spacing: 5px;
+    font-size: 29px !important;
+    letter-spacing: 4px;
+    word-spacing: 4px;
     fill: #fff;
     font-weight: 500;
 }
@@ -127,6 +127,7 @@ header svg textPath {
     width: 100%;
     height: auto;
     position: absolute;
+    z-index: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -159,7 +160,7 @@ header svg textPath {
 
 .project .content .bg-object .portfolio {
     position: absolute;
-    bottom: -5%;
+    bottom: -8%;
     right: 0;
     font-weight: 900;
     color: transparent;
@@ -433,6 +434,7 @@ header svg textPath {
     margin: 0 5px;
     border-radius: 4px;
     color: #3878f9;
+    background: #fff;
     outline: none;
 }
 
